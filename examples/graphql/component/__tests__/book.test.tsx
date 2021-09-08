@@ -1,5 +1,5 @@
 import { Book } from '../book'
-import { act, render, waitFor } from '@testing-library/react-native'
+import { act, render } from '@testing-library/react-native'
 import { MockedProvider } from '@apollo/client/testing'
 import React from 'react'
 import { BookDocument } from '../../graphql'
