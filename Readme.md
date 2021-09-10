@@ -9,3 +9,14 @@ Things generally work much less easilly straight out of the box with React Nativ
 Though I've favoured other tools in the past, my favourites these days include Apollo Graphql (for backend communication), ui Kitten for slick ui interfaces on mobile and mobile web. Kitten works nicely on web, something I can't say confidently for many of the other React Native ui libraries that rely under the hood on react-native-vector-icons.
 
 Because I like to test thoroughly, I make heavy use of React Native Testing Library, and I want to be sure that everything I do can run through it.
+
+## Examples
+
+[Apollo Graphql](./examples/apollo-graphql) - with a component that renders within React Native Testing Library and a mocked request to the backend. It relies on the [schema](./schema.graphql) which is generated using the typescript codegen.
+[Kitten](./examples/kitten) - this is a simple example using the Ui Kitten library. 
+[Web](./examples/web) - this is a basic example of react native web. 
+[Web Kitten](./examples/kitten) - this combines the Kitten and Web Examples
+
+
+
+
