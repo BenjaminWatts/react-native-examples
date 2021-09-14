@@ -12,7 +12,7 @@ const linking = {
   ],
   config: {
     screens: {
-      Home: '*',
+      Home: '/',
       Second: '/second',
       Third: '/third',
     },

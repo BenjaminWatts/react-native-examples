@@ -7,20 +7,30 @@ const screenStyles: any = {
   height: '100%',
 };
 
-export const HomeScreen = () => (
+export const HomeScreen = (props: any) => (
   <Layout style={screenStyles}>
     <Button>HOME</Button>
+    <Button onPress={() => props.navigation.navigate('Second')}>
+      To Second
+    </Button>
+    <Button onPress={() => props.navigation.navigate('Third')}>To Third</Button>
   </Layout>
 );
 
-export const SecondScreen = () => (
+export const SecondScreen = (props: any) => (
   <Layout style={screenStyles}>
     <Button>SECOND</Button>
+    <Button onPress={() => props.navigation.navigate('Home')}>To Home</Button>
+    <Button onPress={() => props.navigation.navigate('Third')}>To Third</Button>
   </Layout>
 );
 
-export const ThirdScreen = () => (
+export const ThirdScreen = (props: any) => (
   <Layout style={screenStyles}>
     <Button>THIRD</Button>
+    <Button onPress={() => props.navigation.navigate('Second')}>
+      To Second
+    </Button>
+    <Button onPress={() => props.navigation.navigate('Home')}>To Home</Button>
   </Layout>
 );
