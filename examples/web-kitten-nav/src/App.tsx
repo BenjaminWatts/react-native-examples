@@ -8,7 +8,7 @@ const linking = {
   prefixes: ['https://mychat.com', 'mychat://'],
   config: {
     screens: {
-      Home: '/',
+      Home: '*',
       Second: '/second',
     },
   },
