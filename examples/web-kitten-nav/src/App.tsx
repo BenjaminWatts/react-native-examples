@@ -5,11 +5,16 @@ import {NavigationContainer} from '@react-navigation/native';
 import {MainStack} from './stack';
 
 const linking = {
-  prefixes: ['https://mychat.com', 'mychat://', 'https://react-native-examples-web-kitten-nav.netlify.app/'],
+  prefixes: [
+    'https://mychat.com',
+    'mychat://',
+    'https://react-native-examples-web-kitten-nav.netlify.app',
+  ],
   config: {
     screens: {
       Home: '*',
       Second: '/second',
+      Third: '/third',
     },
   },
 };

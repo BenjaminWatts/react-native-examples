@@ -18,3 +18,9 @@ export const SecondScreen = () => (
     <Button>SECOND</Button>
   </Layout>
 );
+
+export const ThirdScreen = () => (
+  <Layout style={screenStyles}>
+    <Button>THIRD</Button>
+  </Layout>
+);
